@@ -120,10 +120,10 @@ var controller = {
       var difficulty = document.getElementById('difficulty').value;
 
       var request = 'https://opentdb.com/api.php?amount=20&category=' + category + '&difficulty=' + difficulty + '&encode=url3986';
-      console.log(request);
+      //console.log(request);
       ajaxGet(request, function(apiAnswer) {
         questionnaire = JSON.parse(apiAnswer).results;
-        console.log(questionnaire);
+        //console.log(questionnaire);
 
         controller.checkResponseCode(JSON.parse(apiAnswer).response_code)
       });
@@ -172,7 +172,7 @@ var controller = {
   getAnswers: function() {
     var answers = questionnaire[0].incorrect_answers;
     answers.push(questionnaire[0].correct_answer);
-    console.log(questionnaire[0].correct_answer);
+    //console.log(questionnaire[0].correct_answer);
     while (answers.length > 0) {
       var random = Math.floor(Math.random() * answers.length);
       var choice = document.createElement('li');
