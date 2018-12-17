@@ -1,0 +1,47 @@
+input, label, select, .credits, button {
+  margin: 5px !important;
+  padding: 2px;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.green {
+  background-color: green !important;
+}
+
+.content-quiz {
+  margin: auto;
+}
+
+#title {
+  text-align: center;
+}
+
+.card {
+  min-height: 500px;
+  padding: 20px;
+}
+
+#stats {
+  display: inline-block;
+}
+
+li {
+  cursor: pointer;
+}
+
+#timerDiv {
+  font-size: 50px;
+  border: 2px solid #0099ff;
+  border-radius: 10px;
+}
+
+#main {
+  margin-bottom: 50px;
+}
+
+#title {
+  margin: 20px;
+}

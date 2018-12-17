@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <h1>Quiz Project</h1>
+    </div>
+  </header>
+
+  <div class="container" id="main">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6  content-quiz">
+        <div id="content-quiz" class="card text-center">
+          <div class="container ">
+            <div id="infos" class="row card-header ">
+              <h2 class="card-title">Chose your quizz</h2>
+            </div>
+          </div>
+
+          <div id="question-answer" class="card-body">
+
+            <form>
+              <label for="category">Category:
+                <select name="category" id="category">
+                  <option value="9">General Knowledge</option>
+                  <option value="10">Books</option>
+                  <option value="11">Film</option>
+                  <option value="12">Music</option>
+                  <option value="14">Television</option>
+                  <option value="15">Video Games</option>
+                  <option value="17">Science & Nature</option>
+                  <option value="18">Science: Computers</option>
+                  <option value="21">Sports</option>
+                  <option value="22">Geography</option>
+                  <option value="23">History</option>
+                  <option value="31">Japanese Anime & Manga</option>
+                  <option value="32">Cartoon & Animations</option>
+                </select>
+              </label>
+              <br>
+              <label for="difficulty">Difficulty:
+                <select name="difficulty" id="difficulty">
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+              </label>
+              <br>
+              <input type="submit" value="GO" class="btn btn-primary">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 card content-rules">
+
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-english-tab" data-toggle="tab" href="#nav-english" role="tab" aria-controls="nav-english" aria-selected="true">English</a>
+            <a class="nav-item nav-link" id="nav-francais-tab" data-toggle="tab" href="#nav-francais" role="tab" aria-controls="nav-francais" aria-selected="false">Français</a>
+            <a class="nav-item nav-link" id="nav-credits-tab" data-toggle="tab" href="#nav-credits" role="tab" aria-controls="nav-credits" aria-selected="false">Crédits</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-english" role="tabpanel" aria-labelledby="nav-english-tab">
+            <h2>Objective of the project</h2>
+            <p>Do a quiz game that work with simple rules and i could play without any adds unless like quiz app you can find everywhere.</p>
+            <p>Practice my Javascript skills </p>
+
+            <h2>The rules</h2>
+            <ul>
+              <li>Chose your quizz and score the maximum points.</li>
+              <li>You have 3 life. If you don't answer in 20 seconds or if your answer is wrong, you lose a life.</li>
+              <li>The faster you answer, the most points you get.</li>
+            </ul>
+            <p><strong>Good Luck</strong></p>
+
+          </div>
+          <div class="tab-pane fade" id="nav-francais" role="tabpanel" aria-labelledby="nav-francais-tab">
+            <h2>Objectif du projet</h2>
+            <p>Faire un quiz avec des règles simples auquel je pourrai jouer sans publicité invasive comme dans la pluplart des applications.</p>
+            <p>Pratiquer le Javascript tout en faisant quelques chose d'utile.</p>
+
+            <h2>Les règles</h2>
+            <ul>
+              <li>Choisissez un quiz et faites le maximum de points.</li>
+              <li>Vous avez 3 vies. Si vous ne répondez pas en 20 secondes ou votre réponse est fausse, vous perdez une vie.</li>
+              <li>Répondez vite pour gagner plus de points.</li>
+            </ul>
+            <p><strong>Bonne chance</strong></p>
+          </div>
+          <div class="tab-pane fade" id="nav-credits" role="tabpanel" aria-labelledby="nav-credits-tab">
+            <div class="credits">
+              <p>This quiz has been made by David LEBRON</p>
+              <p>I use a trivia API to get the quiz: <a href="https://opentdb.com/">Open Trivia Database</a></p>
+              <p>Thanks to the open trivia database team for making this great API</p>
+              <p>If you have any suggestions, remarks about the code or the quiz, please send them to me.</p>
+              <p>Thank you for visiting</p>
+              <a href="https://www.linkedin.com/in/david-lebron/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="https://github.com/DavidLebron" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="ajax.js"></script>
+  <script src="quizz.js"></script>
+
+</body>
+
+</html>
