@@ -33,13 +33,13 @@ var model = {
   createTimer: function() {
     var timerDiv = document.createElement('div');
     timerDiv.id = 'timerDiv';
-    timerDiv.className += 'col-12 col-md-4';
+    timerDiv.className += 'col-12 col-lg-5';
     timerDiv.textContent = '20';
     return timerDiv;
   },
   createStats: function() {
     var statsDiv = document.createElement('div');
-    statsDiv.className += ('col-12 col-md-8');
+    statsDiv.className += ('col-12 col-lg-7');
     var life = document.createElement('p');
     life.id = 'life';
     life.textContent = 'Your lifes : ' + playerLife;
